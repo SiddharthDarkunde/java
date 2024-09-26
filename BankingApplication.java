@@ -8,7 +8,6 @@ class BankAccount {
 
     Scanner sc = new Scanner(System.in);
 
-    // Method to open a new account
     public void openAccount() {
         System.out.print("Enter Account Number: ");
         accountNumber = sc.next();
@@ -20,7 +19,7 @@ class BankAccount {
         balance = sc.nextDouble();
     }
 
-    // Method to display account details
+
     public void showAccount() {
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Account Holder Name: " + accountHolderName);
@@ -28,7 +27,7 @@ class BankAccount {
         System.out.println("Balance: " + balance);
     }
 
-    // Method to deposit money
+   
     public void deposit() {
         System.out.print("Enter amount to deposit: ");
         double amount = sc.nextDouble();
@@ -36,7 +35,7 @@ class BankAccount {
         System.out.println("Amount deposited successfully. New balance: " + balance);
     }
 
-    // Method to withdraw money
+   
     public void withdraw() {
         System.out.print("Enter amount to withdraw: ");
         double amount = sc.nextDouble();
@@ -48,7 +47,7 @@ class BankAccount {
         }
     }
 
-    // Method to search an account by account number
+
     public boolean search(String accNo) {
         if (accountNumber.equals(accNo)) {
             showAccount();
